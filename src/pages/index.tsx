@@ -52,6 +52,9 @@ const StyledContents = styled.ol`
   display: flex;
   flex-direction: column;
   gap: 44px;
+  & > a {
+    text-decoration: none;
+  }
 `
 
 const StyledContentItem = styled.div`
@@ -61,7 +64,9 @@ const StyledContentItem = styled.div`
 `
 
 const StyledContentTitle = styled.h3`
-  ${Typography.title1}
+  margin: 0;
+  color: ${Colors.gray300};
+  ${Typography.title1};
 `
 
 const StyledContentCreateAt = styled.span`

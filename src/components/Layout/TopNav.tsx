@@ -27,10 +27,18 @@ const StyledNavigation = styled.nav`
 const StyledCategoryWrapper = styled.ul`
   display: flex;
   gap: 32px;
+  margin: 0;
 `
 
 const StyledCategory = styled.li`
+  list-style-type: none;
+  color: ${Colors.gray300};
+  margin: 0;
   ${Typography.title2}
+  & > a {
+    color: inherit;
+    text-decoration: none;
+  }
   &:hover {
     color: ${Colors.pointSecondary};
   }

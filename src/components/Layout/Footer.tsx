@@ -32,4 +32,8 @@ const StyledFooterContents = styled.div`
   display: flex;
   gap: 16px;
   color: ${Colors.pointPrimary};
+  & > a {
+    color: inherit;
+    text-decoration: none;
+  }
 `
