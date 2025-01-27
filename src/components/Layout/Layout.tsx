@@ -26,5 +26,5 @@ const StyledLayoutWrapper = styled.div`
 `
 
 const StyledContents = styled.div`
-  padding: 62px 16px;
+  padding: 62px 0;
 `

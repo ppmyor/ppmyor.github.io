@@ -31,8 +31,9 @@ export const headline = {
 export const title = {
   title1: css`
     font-family: ${fontFamily.pretendard};
-    font-weight: ${fontWeight.bold};
+    font-weight: ${fontWeight.semiBold};
     letter-spacing: ${letterSpacing.basic};
+    font-size: 32px;
   `,
   title2: css`
     font-family: ${fontFamily.pretendard};
@@ -67,6 +68,12 @@ export const caption = {
   caption1: css`
     font-family: ${fontFamily.pretendard};
     font-weight: ${fontWeight.semiBold};
+    letter-spacing: ${letterSpacing.basic};
+    font-size: 14px;
+  `,
+  caption2: css`
+    font-family: ${fontFamily.pretendard};
+    font-weight: ${fontWeight.regular};
     letter-spacing: ${letterSpacing.basic};
     font-size: 14px;
   `,
