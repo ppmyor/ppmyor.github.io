@@ -16,25 +16,59 @@ const fontWeight = {
   heavy: 900,
 }
 
+const letterSpacing = {
+  basic: "-0.03rem",
+}
+
 export const headline = {
   headline: css`
     font-family: ${fontFamily.pretendard};
     font-weight: ${fontWeight.bold};
+    font-size: 36px;
   `,
 }
 
 export const title = {
-  title: css`
+  title1: css`
     font-family: ${fontFamily.pretendard};
     font-weight: ${fontWeight.bold};
+    letter-spacing: ${letterSpacing.basic};
+  `,
+  title2: css`
+    font-family: ${fontFamily.pretendard};
+    font-weight: ${fontWeight.semiBold};
+    letter-spacing: ${letterSpacing.basic};
+    font-size: 20px;
   `,
 }
 
 export const body = {
-  body: css`
+  body1: css`
     font-family: ${fontFamily.pretendard};
     font-weight: ${fontWeight.regular};
+    letter-spacing: ${letterSpacing.basic};
+    font-size: 20px;
+  `,
+  body2: css`
+    font-family: ${fontFamily.pretendard};
+    font-weight: ${fontWeight.regular};
+    letter-spacing: ${letterSpacing.basic};
+    font-size: 18px;
+  `,
+  body3: css`
+    font-family: ${fontFamily.pretendard};
+    font-weight: ${fontWeight.regular};
+    letter-spacing: ${letterSpacing.basic};
     font-size: 16px;
+  `,
+}
+
+export const caption = {
+  caption1: css`
+    font-family: ${fontFamily.pretendard};
+    font-weight: ${fontWeight.semiBold};
+    letter-spacing: ${letterSpacing.basic};
+    font-size: 14px;
   `,
 }
 
@@ -42,6 +76,7 @@ const Typography = {
   ...headline,
   ...title,
   ...body,
+  ...caption,
 }
 
 export default Typography
