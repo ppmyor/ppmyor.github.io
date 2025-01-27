@@ -29,6 +29,38 @@ export const onRenderBody = ({ setHeadComponents }) => {
     />,
     <link
       rel="preload"
+      href="/fonts/Pretendard-SemiBold.woff"
+      as="font"
+      type="font/woff"
+      crossOrigin="anonymous"
+      key="pretendardSemiBold"
+    />,
+    <link
+      rel="preload"
+      href="/fonts/Pretendard-SemiBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossOrigin="anonymous"
+      key="pretendardSemiBold2"
+    />,
+    <link
+      rel="preload"
+      href="/fonts/Pretendard-Medium.woff"
+      as="font"
+      type="font/woff"
+      crossOrigin="anonymous"
+      key="pretendardMedium"
+    />,
+    <link
+      rel="preload"
+      href="/fonts/Pretendard-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossOrigin="anonymous"
+      key="pretendardMedium2"
+    />,
+    <link
+      rel="preload"
       href="/fonts/Pretendard-Regular.woff"
       as="font"
       type="font/woff"
