@@ -14,17 +14,24 @@ export default function Layout({ children }: Props) {
       <main>
         <Header />
         <TopNav />
-        <StyledContents>{children}</StyledContents>
+        <StyledContentsWrapper>
+          <StyledContents>{children}</StyledContents>
+        </StyledContentsWrapper>
         <Footer />
       </main>
     </StyledLayoutWrapper>
   )
 }
 
-const StyledLayoutWrapper = styled.div`
-  height: 100vh;
+const StyledLayoutWrapper = styled.div``
+
+const StyledContentsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 62px 0;
 `
 
 const StyledContents = styled.div`
-  padding: 62px 0;
+  width: 50%;
 `

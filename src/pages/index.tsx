@@ -46,12 +46,7 @@ export default function BlogIndexPage({ data }: Props) {
   )
 }
 
-const StyledContentsWrapper = styled.article`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-`
+const StyledContentsWrapper = styled.article``
 
 const StyledContents = styled.ol`
   display: flex;
