@@ -13,6 +13,7 @@ export default function Header() {
 
 const StyledHeader = styled.h1`
   padding: 32px;
+  margin: 0;
   color: ${Colors.pointPrimary};
   ${Typography.headline};
 `
