@@ -79,11 +79,21 @@ export const caption = {
   `,
 }
 
+export const label = {
+  label1: css`
+    font-family: ${fontFamily.pretendard};
+    font-weight: ${fontWeight.semiBold};
+    letter-spacing: ${letterSpacing.basic};
+    font-size: 16px;
+  `,
+}
+
 const Typography = {
   ...headline,
   ...title,
   ...body,
   ...caption,
+  ...label,
 }
 
 export default Typography
