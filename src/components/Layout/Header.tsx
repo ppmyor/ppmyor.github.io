@@ -6,7 +6,7 @@ import Colors from "@/layout/color"
 export default function Header() {
   return (
     <StyledHeader>
-      <a href="/">개발새발</a>
+      <a href="/">이렇게 삽질하다간 지구 끝까지 닿겠어</a>
     </StyledHeader>
   )
 }
