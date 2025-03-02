@@ -4,6 +4,7 @@ import { CATEGORIES } from "@/constants/categories"
 import Typography from "@/layout/typography"
 import Colors from "@/layout/color"
 
+// TODO: 각 카테고리별 페이지 구현 필요
 export default function TopNav() {
   return (
     <StyledNavigation>

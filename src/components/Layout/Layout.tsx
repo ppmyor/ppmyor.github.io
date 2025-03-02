@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Header from "@/components/Layout/Header"
-import TopNav from "@/components/Layout/TopNav"
+// import TopNav from "@/components/Layout/TopNav"
 import Footer from "@/components/Layout/Footer"
 
 interface Props {
@@ -13,7 +13,7 @@ export default function Layout({ children }: Props) {
     <StyledLayoutWrapper>
       <main>
         <Header />
-        <TopNav />
+        {/* <TopNav /> */}
         <StyledContentsWrapper>
           <StyledContents>{children}</StyledContents>
         </StyledContentsWrapper>
