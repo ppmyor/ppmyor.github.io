@@ -25,6 +25,8 @@ export default function BlogPostTemplate({ data: { markdownRemark: post } }) {
               image={thumbnailImage}
               alt={post.frontmatter.title}
               style={{
+                border: "1px solid #bbb",
+                borderRadius: "5px",
                 width: "100%",
               }}
             />

@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { graphql, Link } from "gatsby"
 import Typography from "@/layout/typography"
 import Colors from "@/layout/color"
@@ -16,6 +17,8 @@ interface Props {
           title: string | null
           date: string | null
           description: string | null
+          category: any
+          featuredImage: any
         }
       }[]
     }
@@ -29,7 +32,17 @@ export default function BlogIndexPage({ data }: Props) {
         <StyledContents>
           {data.allMarkdownRemark.nodes.map(({ fields, frontmatter }) => (
             <Link key={fields.slug} to={fields.slug}>
+              <StyledCategory>{frontmatter.category}</StyledCategory>
               <StyledContentItem>
+                <GatsbyImage
+                  image={getImage(frontmatter.featuredImage)}
+                  alt={frontmatter.title}
+                  style={{
+                    border: "1px solid #bbb",
+                    borderRadius: "5px",
+                    width: "100%",
+                  }}
+                />
                 <StyledContentTitle>{frontmatter.title}</StyledContentTitle>
                 <StyledContentCreateAt>
                   {frontmatter.date}
@@ -57,10 +70,19 @@ const StyledContents = styled.ol`
   }
 `
 
+const StyledCategory = styled.mark`
+  padding: 6px 10px;
+  border-radius: 18px;
+  background-color: ${Colors.pointSecondary};
+  color: ${Colors.gray900};
+  ${Typography.label1}
+`
+
 const StyledContentItem = styled.div`
   display: flex;
   flex-direction: column;
   gap: 14px;
+  margin-top: 16px;
 `
 
 const StyledContentTitle = styled.h3`
@@ -97,6 +119,12 @@ export const pageQuery = graphql`
           title
           date
           description
+          category
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED)
+            }
+          }
         }
       }
     }
