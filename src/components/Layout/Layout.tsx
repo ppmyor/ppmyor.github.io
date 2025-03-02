@@ -34,4 +34,8 @@ const StyledContentsWrapper = styled.div`
 
 const StyledContents = styled.div`
   width: 50%;
+
+  @media (max-width: 600px) {
+    width: 80%;
+  }
 `
