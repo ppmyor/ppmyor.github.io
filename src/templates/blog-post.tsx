@@ -26,7 +26,6 @@ export default function BlogPostTemplate({ data: { markdownRemark: post } }) {
               alt={post.frontmatter.title}
               style={{
                 width: "100%",
-                height: "500px",
               }}
             />
           )}
