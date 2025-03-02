@@ -237,6 +237,12 @@ a:focus {
   text-decoration: none;
 }
 
+/* img */
+
+img {
+  width: 100%;
+}
+
 /* Font */
 
 @font-face {
