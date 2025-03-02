@@ -65,6 +65,7 @@ const StyledContents = styled.ol`
   display: flex;
   flex-direction: column;
   gap: 44px;
+  margin: 0;
   & > a {
     text-decoration: none;
   }
