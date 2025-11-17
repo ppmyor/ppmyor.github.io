@@ -33,19 +33,20 @@ tags: ["FE-perfomance", "perfomance"]
 
 ### 크롬 개발자 도구의 Network 패널
 
-![네이버 network 패널](https://github.com/user-attachments/assets/e3732d3a-63d5-4cb5-b849-ad750591aeea)
+![네이버 network 패널](https://github.com/user-attachments/assets/df2b0ea9-7b8b-4b06-b8ef-e41899365c35)
 
 해당 패널은 웹 페이지에서 발생하는 모든 네트워크 트래픽을 알려주며, 어느 시점에서 리소스가 로드 되는지 그리고 리소스의 크기 등도 알 수 있습니다. 위의 사진은 [네이버](https://www.naver.com/)의 네트워크 패널입니다.
 
 ### 크롬 개발자 도구의 Performance 패널
 
-![네이버 perfomance 패널](https://github.com/user-attachments/assets/58379d3d-d152-4ad0-8aae-747a9ab31713)
+![네이버 perfomance 패널](https://github.com/user-attachments/assets/b6f59814-0972-44eb-a5e2-1a63f6d72f8d)
 
 해당 패널은 웹 페이지가 로드 될 때, 실행되는 모든 작업을 보여줍니다. 리소스가 로드 되는 타이밍 뿐만 아니라, 웹 페이지에서 실행되는 자바스크립트 또한 알 수 있습니다. 위의 사진은 [네이버](https://www.naver.com/)의 퍼포먼스 패널입니다.
 
 ### 크롬 개발자 도구의 Lighthouse 패널
 
-![네이버 Lighthouse 패널](https://github.com/user-attachments/assets/fda76d38-65d7-4852-94fa-a057e68966c0)
+![네이버 Lighthouse 패널](https://github.com/user-attachments/assets/92eadc6a-f980-4ee3-a533-9280ecbb24f9)
+
 
 Lighthouse는 구글에서 만든 툴로, 웹사이트의 성능 점수를 측정하고 개선점을 확인할 수 있습니다. 개발자는 각각의 웹 바이탈(web vitals)에서 제공하는 개선점을 통해 어느 부분을 개선해야하는지 가이드를 잡을 수 있습니다.
 위의 사진은 [네이버](https://www.naver.com/)의 라이트하우스 패널입니다.
