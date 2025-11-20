@@ -13,7 +13,7 @@ tags: ["FE-perfomance", "perfomance"]
 
 ## 들어가며
 
-앞서 로딩 성능은 웹 페이지에 필요한 리소스를 다운로드할 때의 성능이라고 말했습니다. 고화질의 이미지가 포함되어있거나 HTML, CSS, JS 파일의 크기가 너무 크면 다운로드에 시간이 걸리기에 로딩 시간이 지연되게 됩니다. 우선, 로딩 성능을 개선하기 위해서는 브라우저가 어떻게 로딩되는지에 대한 기본 지식이 필요합니다. 우선 브라우저의 로딩 과정을 함께 살펴봅니다.
+[앞선 글](https://ppmyor.github.io/dev/introduce-perfomance-1/)을 읽고 오면 좋습니다. 로딩 성능은 웹 페이지에 필요한 리소스를 다운로드할 때의 성능이라고 말했습니다. 고화질의 이미지가 포함되어있거나 HTML, CSS, JS 파일의 크기가 너무 크면 다운로드에 시간이 걸리기에 로딩 시간이 지연되게 됩니다. 우선, 로딩 성능을 개선하기 위해서는 브라우저가 어떻게 로딩되는지에 대한 기본 지식이 필요합니다. 우선 브라우저의 로딩 과정을 함께 살펴봅니다.
 
 ## 브라우저의 로딩 과정
 
@@ -125,15 +125,15 @@ CDN은 간단히 말해 사용자와 가까운 거리에 컨텐츠 서버를 두
 ```js
 import (‘A’).then((module) => {
 	const { A } = module;
-})
+});
 ```
 
 동적 import문은 Promise형태로 모듈을 반환해 주는데 컴포넌트를 import하기 위해서는 Promise 내부에서 로드된 컴포넌트를 Promise 밖으로 빼내주어야합니다. 이를 해결하기 위해 리액트는 [**lazy**](https://react.dev/reference/react/lazy)와 [**Suspense**](https://react.dev/reference/react/Suspense)를 제공합니다.
 
 ```jsx
-import React, { Suspense } from ‘react’
+import React, { Suspense } from ‘react’;
 
-const AComponent = React.lazy(() => import(‘./AComponent’))
+const AComponent = React.lazy(() => import(‘./AComponent’));
 
 function APage() {
 	return (
